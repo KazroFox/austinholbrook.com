@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .jumbotron
+    .container
+      h1(class='title') Need something?
+      p I can help with that!
+  
+  div(class='container main-content')
+    article
+      p I try to be pretty easy to get in contact with. I use Twitter regularly, even if I don't post all that often. You can find my Twitter #[a(href='https://twitter.com/ahbrk') here], or also in the footer of every page on the site.
+      p If you want a more traditional contact method, enter your info and message into the form below and it will be whisked away and dropped directly into my inbox!
+      
+      form.form-horizontal(action='/contact_submit' method='POST')
+        .form-group
+          label.control-label.col-sm-2(for='name') Name:
+          .col-sm-10
+            input.form-control(type='text' name='name' placeholder='John Doe')
+        .form-group
+          label.control-label.col-sm-2(for='email') Email:
+          .col-sm-10
+            input.form-control(type='email' name='email' placeholder='jdoe@example.com')
+        .form-group
+          label.control-label.col-sm-2(for='spam') 5 * 3 + 2 =
+          .col-sm-10
+            input.form-control(type='text' name='spam' placeholder='Are you a robot?')
+        .form-group
+          label.control-label.col-sm-2(for='message') Message:
+          .col-sm-10
+            textarea.form-control(name='message' placeholder='Message...')
+        .form-group
+          .col-sm-offset-2.col-sm-10
+            .checkbox
+              label
+                input(type='checkbox')
+                | Send me a copy
+        .form-group
+          .col-sm-offset-2.col-sm-10
+            button.btn.btn-primary(type='submit') Submit

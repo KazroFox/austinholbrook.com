@@ -1,0 +1,21 @@
+{
+  "name": "austinholbrook.com",
+  "version": "0.0.1",
+  "authors": [
+    "Austin Holbrook <ausholbrook@gmail.com>"
+  ],
+  "description": "My homepage",
+  "main": "index.js",
+  "license": "BSD",
+  "homepage": "austinholbrook.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.3.0"
+  }
+}
